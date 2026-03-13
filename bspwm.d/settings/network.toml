@@ -42,7 +42,7 @@ driver.desc  = "Kernel WiFi driver module"
 driver.label = "Driver"
 
 [config.network.tor]
-enabled    = false
+enabled    = true
 proxy_port = 9050
 [[config.network.tor.true]]
 torinstance = "$HOME/.config/bspwm/apps/tor-instance"

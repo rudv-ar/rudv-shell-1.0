@@ -17,7 +17,7 @@ is_net_ethernet=true
 is_net_firewall=true
 
 # is tor enabled?
-is_net_tor=false
+is_net_tor=true
 
 # is wifi enabled?
 is_net_wifi=true
@@ -53,7 +53,7 @@ net_wifi_interface_2='wlan1'
 net_tor_proxy_port=9050
 
 # set up the default tor config
-net_tor_torrc='/etc/tor/torrc'
+net_tor_torrc="$HOME/.config/bspwm/apps/tor-instance/torrc"
 
 # the below given are custom tor paths (visible only if tor is enabled)
 

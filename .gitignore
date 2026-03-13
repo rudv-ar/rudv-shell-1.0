@@ -2,3 +2,4 @@ walls
 walls.ref
 ./walls 
 ./walls.ref 
+./apps/tor-instance 

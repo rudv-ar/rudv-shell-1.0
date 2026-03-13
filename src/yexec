@@ -1,0 +1,72 @@
+#!/bin/bash
+XTERM="alacritty"
+
+export SCRIPT=$(readlink -f $0)
+export PWD=$(dirname $SCRIPT)
+
+# Create history file
+mkdir -p ${XDG_CACHE_HOME:-$HOME/.cache}
+export HISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/.ix-run.history
+
+# Create history file
+if [ ! -f $HISTFILE ]; then
+    mkdir -p ${XDG_CACHE_HOME:-$HOME/.cache}
+    echo "" > $HISTFILE
+fi
+
+# Delete history file
+Clear_History(){
+    rm $HISTFILE
+    yad --fixed \
+        --title="History" \
+        --window-icon="applications-system" \
+        --text="\n History Cleared \n" \
+        --timeout="1" \
+        --no-buttons
+    echo "\n" > $HISTFILE
+    kill $YAD_PID
+    exec $SCRIPT
+}
+export -f Clear_History
+
+# Create and run dialog
+TITLE="Run command"
+TEXT="\nEnter command to execute:\n"
+rcmd=$(yad --entry \
+    --width=500 \
+    --window-icon="gtk-execute" \
+    --name="${0##/}" \
+    --title="$TITLE" \
+    --text="$TEXT" \
+    --image="gtk-execute" \
+    --editable \
+    --mouse \
+    --rest $HISTFILE \
+    --button="Clear History!gtk-clear:bash -c Clear_History" \
+    --button="yad-cancel:1" \
+    --button="yad-execute:0")
+
+[ -z "$rcmd" ] && exit 0
+
+# Run command
+case $rcmd in
+    http://*|https://*|ftp://*)
+        xdg-open $rcmd &
+    ;;
+    mailto://*)
+        xdg-email $rcmd &
+    ;;
+    man://*)
+        eval $XTERM -e "man ${rcmd#man://}" &
+    ;;
+    telnet*|ssh*|ranger|ncmpcpp|cava|cmatrix|sl|neofetch)
+        eval $XTERM -e "$rcmd" &
+    ;;
+    *)
+        eval $rcmd &
+    ;;
+esac
+
+# Add command to history
+grep -q -F "$rcmd" $HISTFILE || sed -i "1 i $rcmd" $HISTFILE
+exit 0

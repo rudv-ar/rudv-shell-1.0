@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+
+##################################################
+# rudv-ar - 2026
+##################################################
+
+# bspwm directory
+DIR="$HOME/.config/bspwm/bspwm.d"
+
+# Launch dunst daemon
+if [[ `pidof dunst` ]]; then
+	pkill dunst
+fi
+
+dunst -config "$DIR"/dunstrc &

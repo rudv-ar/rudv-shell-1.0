@@ -1,0 +1,3 @@
+#!/bin/bash
+
+vicinae deeplink vicinae://extensions/dagimg-dot/wifi-commander/scan-wifi

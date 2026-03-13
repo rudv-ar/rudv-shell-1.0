@@ -1,0 +1,360 @@
+\n\n===========================TOR Started: Thursday 05 March 2026 02:04:55 AM IST ====================\n\n
+Mar 05 02:04:56.707 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 02:04:56.707 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 02:04:56.854 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 02:04:56.859 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 02:04:56.859 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 02:04:56.859 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 02:04:56.859 [notice] Control listener listening on port 38901.
+Mar 05 02:04:56.859 [notice] Opened Control listener connection (ready) on 127.0.0.1:38901
+Mar 05 02:04:57.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 02:04:57.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 02:04:59.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 02:04:59.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 02:05:00.000 [notice] Starting with guard context "default"
+Mar 05 02:05:01.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 02:05:01.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 02:05:01.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 02:05:02.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 02:05:02.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 02:05:02.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 02:05:02.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 02:05:03.000 [notice] Bootstrapped 100% (done): Done
+Mar 05 02:05:04.000 [notice] Our directory information is no longer up-to-date enough to build circuits: We need more microdescriptors: we have 6687/9736, and can only build 32% of likely paths. (We have 72% of guards bw, 73% of midpoint bw, and 61% of exit bw = 32% of path bw.)
+Mar 05 02:05:04.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 6687/9736, and can only build 32% of likely paths. (We have 72% of guards bw, 73% of midpoint bw, and 61% of exit bw = 32% of path bw.)
+Mar 05 02:05:13.000 [notice] We now have enough directory information to build circuits.
+\n\n===========================TOR Started: Thursday 05 March 2026 02:38:39 AM IST ====================\n\n
+Mar 05 02:38:39.291 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 02:38:39.291 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 02:38:39.328 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 02:38:39.349 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 02:38:39.350 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 02:38:39.350 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 02:38:39.350 [notice] Control listener listening on port 37267.
+Mar 05 02:38:39.350 [notice] Opened Control listener connection (ready) on 127.0.0.1:37267
+Mar 05 02:38:39.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 02:38:41.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 02:38:42.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 02:38:42.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 02:38:48.000 [notice] Starting with guard context "default"
+Mar 05 02:38:49.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 02:38:49.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 02:38:50.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 02:38:51.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 02:38:51.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 02:38:51.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 02:38:51.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 02:38:52.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 02:45:01 AM IST ===
+
+
+Mar 05 02:45:01.394 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 02:45:01.396 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 02:45:01.474 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 02:45:01.516 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 02:45:01.517 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 02:45:01.517 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 02:45:01.517 [notice] Control listener listening on port 35459.
+Mar 05 02:45:01.517 [notice] Opened Control listener connection (ready) on 127.0.0.1:35459
+Mar 05 02:45:01.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 02:45:03.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 02:45:04.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 02:45:04.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 02:45:07.000 [notice] Starting with guard context "default"
+Mar 05 02:45:08.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 02:45:08.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 02:45:09.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 02:45:09.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 02:45:09.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 02:45:09.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 02:45:09.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 02:45:10.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 11:24:43 AM IST ===
+
+
+Mar 05 11:24:44.398 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 11:24:44.399 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 11:24:44.605 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 11:24:44.688 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 11:24:44.688 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 11:24:44.688 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 11:24:44.688 [notice] Control listener listening on port 34291.
+Mar 05 11:24:44.688 [notice] Opened Control listener connection (ready) on 127.0.0.1:34291
+Mar 05 11:24:44.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 11:24:45.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 11:24:46.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 11:24:46.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 11:24:52.000 [notice] Starting with guard context "default"
+Mar 05 11:24:53.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 11:24:53.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 11:24:53.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 11:24:54.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 11:24:54.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 11:24:54.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 11:24:54.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 11:24:55.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 11:28:54 AM IST ===
+
+
+Mar 05 11:28:55.028 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 11:28:55.029 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 11:28:55.039 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 11:28:55.070 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 11:28:55.070 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 11:28:55.070 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 11:28:55.071 [notice] Control listener listening on port 44367.
+Mar 05 11:28:55.071 [notice] Opened Control listener connection (ready) on 127.0.0.1:44367
+Mar 05 11:28:55.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 11:28:56.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 11:28:57.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 11:28:57.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 11:29:00.000 [notice] Starting with guard context "default"
+Mar 05 11:29:02.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 11:29:02.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 11:29:02.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 11:29:03.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 11:29:03.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 11:29:03.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 11:29:03.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 11:29:05.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 01:10:57 PM IST ===
+
+
+Mar 05 13:10:58.206 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 13:10:58.206 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 13:10:58.490 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 13:10:58.620 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 13:10:58.621 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 13:10:58.621 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 13:10:58.621 [notice] Control listener listening on port 38987.
+Mar 05 13:10:58.621 [notice] Opened Control listener connection (ready) on 127.0.0.1:38987
+Mar 05 13:10:58.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 13:10:59.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 13:11:00.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 13:11:00.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 13:11:04.000 [notice] Starting with guard context "default"
+Mar 05 13:11:06.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 13:11:06.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 13:11:06.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 13:11:07.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 13:11:07.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 13:11:07.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 13:11:07.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 13:11:08.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 01:11:34 PM IST ===
+
+
+Mar 05 13:11:34.929 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 13:11:34.929 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 13:11:34.929 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 13:11:34.935 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 13:11:34.935 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 13:11:34.935 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 13:11:34.935 [notice] Control listener listening on port 35553.
+Mar 05 13:11:34.935 [notice] Opened Control listener connection (ready) on 127.0.0.1:35553
+Mar 05 13:11:34.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 13:11:36.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 13:11:37.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 13:11:37.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 13:11:39.000 [notice] Starting with guard context "default"
+Mar 05 13:11:40.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 13:11:40.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 13:11:40.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 13:11:41.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 13:11:41.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 13:11:41.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 13:11:41.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 13:11:42.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 01:12:11 PM IST ===
+
+
+Mar 05 13:12:11.659 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 13:12:11.659 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 13:12:11.659 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 13:12:11.685 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 13:12:11.685 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 13:12:11.685 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 13:12:11.685 [notice] Control listener listening on port 44643.
+Mar 05 13:12:11.685 [notice] Opened Control listener connection (ready) on 127.0.0.1:44643
+Mar 05 13:12:11.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 13:12:12.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 13:12:13.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 13:12:13.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 13:12:15.000 [notice] Starting with guard context "default"
+Mar 05 13:12:16.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 13:12:17.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 13:12:17.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 13:12:18.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 13:12:18.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 13:12:18.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 13:12:18.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 13:12:19.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 02:32:28 PM IST ===
+
+
+Mar 05 14:32:29.350 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 14:32:29.351 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 14:32:29.438 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 14:32:29.540 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 14:32:29.540 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 14:32:29.540 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 14:32:29.540 [notice] Control listener listening on port 43657.
+Mar 05 14:32:29.540 [notice] Opened Control listener connection (ready) on 127.0.0.1:43657
+Mar 05 14:32:29.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 14:32:31.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 14:32:32.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 14:32:32.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 14:32:45.000 [notice] Starting with guard context "default"
+Mar 05 14:32:47.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 14:32:47.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 14:32:48.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 14:32:48.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 14:32:48.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 14:32:48.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 14:32:48.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 14:32:52.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 02:32:59 PM IST ===
+
+
+Mar 05 14:32:59.744 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 14:32:59.744 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 14:32:59.786 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 14:32:59.883 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 14:32:59.885 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 14:32:59.885 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 14:32:59.885 [notice] Control listener listening on port 42913.
+Mar 05 14:32:59.885 [notice] Opened Control listener connection (ready) on 127.0.0.1:42913
+Mar 05 14:32:59.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 14:33:01.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 14:33:03.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 14:33:03.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 14:33:11.000 [notice] Starting with guard context "default"
+Mar 05 14:33:12.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 14:33:13.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 14:33:13.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 14:33:13.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 14:33:13.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 14:33:13.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 14:33:13.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 14:33:14.000 [notice] Bootstrapped 100% (done): Done
+Mar 05 14:33:27.000 [notice] Your network connection speed appears to have changed. Resetting timeout to 60000ms after 18 timeouts and 102 buildtimes.
+
+
+=== TOR Started: Thursday 05 March 2026 02:33:29 PM IST ===
+
+
+Mar 05 14:33:30.017 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 14:33:30.017 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 14:33:30.176 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 14:33:30.344 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 14:33:30.344 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 14:33:30.344 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 14:33:30.344 [notice] Control listener listening on port 33123.
+Mar 05 14:33:30.344 [notice] Opened Control listener connection (ready) on 127.0.0.1:33123
+Mar 05 14:33:30.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 14:33:31.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 14:33:34.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 14:33:34.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 14:33:43.000 [notice] Starting with guard context "default"
+Mar 05 14:33:44.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 14:33:45.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 14:33:45.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 14:33:46.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 14:33:46.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 14:33:46.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 14:33:46.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 14:33:49.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 02:40:11 PM IST ===
+
+
+Mar 05 14:40:12.901 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 14:40:12.901 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 14:40:12.932 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 14:40:13.256 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 14:40:13.256 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 14:40:13.256 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 14:40:13.256 [notice] Control listener listening on port 32771.
+Mar 05 14:40:13.256 [notice] Opened Control listener connection (ready) on 127.0.0.1:32771
+Mar 05 14:40:13.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 14:40:16.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 14:40:20.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 14:40:20.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 14:40:34.000 [notice] Starting with guard context "default"
+Mar 05 14:40:36.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 14:40:37.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 14:40:37.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 14:40:38.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 14:40:38.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 14:40:38.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 14:40:38.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 14:40:40.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 02:41:35 PM IST ===
+
+
+Mar 05 14:41:36.136 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 14:41:36.136 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 14:41:36.136 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 14:41:36.179 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 14:41:36.179 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 14:41:36.179 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 14:41:36.179 [notice] Control listener listening on port 39757.
+Mar 05 14:41:36.179 [notice] Opened Control listener connection (ready) on 127.0.0.1:39757
+Mar 05 14:41:36.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 14:41:39.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 14:41:42.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 14:41:42.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 14:41:49.000 [notice] Starting with guard context "default"
+Mar 05 14:41:51.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 14:41:52.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 14:41:52.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 14:41:53.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 14:41:53.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 14:41:53.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 14:41:53.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 14:41:55.000 [notice] Bootstrapped 100% (done): Done
+
+
+=== TOR Started: Thursday 05 March 2026 02:46:03 PM IST ===
+
+
+Mar 05 14:46:04.033 [notice] Tor 0.4.9.5 running on Linux with Libevent 2.1.12-stable, OpenSSL 3.6.1, Zlib 1.3.2, Liblzma 5.8.2, Libzstd 1.5.7 and Glibc 2.43 as libc.
+Mar 05 14:46:04.034 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Mar 05 14:46:04.086 [notice] Read configuration file "/home/rudv-ar/.config/bspwm/apps/tor-instance/torrc".
+Mar 05 14:46:04.097 [notice] Opening Socks listener on 127.0.0.1:9050
+Mar 05 14:46:04.097 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Mar 05 14:46:04.097 [notice] Opening Control listener on 127.0.0.1:0
+Mar 05 14:46:04.097 [notice] Control listener listening on port 37755.
+Mar 05 14:46:04.097 [notice] Opened Control listener connection (ready) on 127.0.0.1:37755
+Mar 05 14:46:04.000 [notice] Parsing GEOIP IPv4 file /usr/share/tor/geoip.
+Mar 05 14:46:07.000 [notice] Parsing GEOIP IPv6 file /usr/share/tor/geoip6.
+Mar 05 14:46:10.000 [notice] Set list of supported TLS groups to: ?*X25519MLKEM768 / ?SecP256r1MLKEM768 / *P-256:?X25519:P-224
+Mar 05 14:46:10.000 [notice] Bootstrapped 0% (starting): Starting
+Mar 05 14:46:15.000 [notice] Starting with guard context "default"
+Mar 05 14:46:16.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Mar 05 14:46:17.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Mar 05 14:46:17.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Mar 05 14:46:18.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Mar 05 14:46:18.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Mar 05 14:46:18.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Mar 05 14:46:18.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Mar 05 14:46:20.000 [notice] Bootstrapped 100% (done): Done

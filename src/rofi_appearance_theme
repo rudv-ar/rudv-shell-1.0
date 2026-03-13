@@ -1,0 +1,103 @@
+#!/usr/bin/env bash
+
+# Import Current Theme
+DIR="$HOME/.config/bspwm"
+RASI="$DIR/rofi/sys-themes.rasi"
+
+
+XSETTINGSD="$DIR/xsettingsd"
+
+# Generic KV updater
+set_kv() {
+    local key="$1"
+    local value="$2"
+
+    # If key exists → replace its value
+    if grep -q "^$key" "$XSETTINGSD"; then
+        sed -i "s|^$key.*|$key \"$value\"|g" "$XSETTINGSD"
+    else
+        # If key does not exist → append it
+        echo "$key \"$value\"" >> "$XSETTINGSD"
+    fi
+}
+
+# Theme updater
+update_theme() {
+    local NetTheme="$1"
+    set_kv "Net/ThemeName" "$NetTheme"
+}
+
+# Icon updater
+update_icon() {
+    local NetIcon="$1"
+    set_kv "Net/IconThemeName" "$NetIcon"
+}
+
+# Cursor updater
+update_cursor() {
+    local NetCursor="$1"
+    set_kv "Gtk/CursorThemeName" "$NetCursor"
+}
+
+# DPI
+update_dpi() {
+    local dpi="$1"
+    set_kv "Xft/DPI" "$dpi"
+}
+
+# Hinting
+update_hintstyle() {
+    local hint="$1"
+    set_kv "Xft/HintStyle" "$hint"
+}
+
+# Antialias
+update_antialias() {
+    local aa="$1"
+    set_kv "Xft/Antialias" "$aa"
+}
+
+
+
+# List Available Themes
+THEMES=(`cd /usr/share/themes && ls -d */ -1 | cut -d '/' -f1`)
+
+# Theme Elements
+prompt="Appearance : GTK Theme Manager"
+mesg="<b>Available Themes</b> : `cd /usr/share/themes && ls -d */ -1 | cut -d '/' -f1 | wc -l`"
+
+# Rofi CMD
+rofi_cmd() {
+	rofi -dmenu \
+		-p "$prompt" \
+		-mesg "$mesg" \
+		-sep '|' \
+		-markup-rows \
+		-theme ${RASI}
+}
+
+# Pass variables to rofi dmenu
+run_rofi() {
+	echo ${THEMES[@]} | sed 's/ /|/g' | sed 's/$/|/' | rofi_cmd
+}
+
+# Apply Theme
+apply_theme() {
+	selected="`run_rofi`"
+	current="`cat $DIR/themes/.current`"
+
+	for theme in "${THEMES[@]}"; do
+		echo "${THEMES[@]}"
+		if [[ -z "$selected" ]]; then
+			break
+		elif [[ "$selected" == "$theme" ]]; then
+			update_theme "$theme"
+			xdotool key ctrl+shift+r
+			break
+		fi
+	done 
+}
+
+
+apply_theme && exit 0
+

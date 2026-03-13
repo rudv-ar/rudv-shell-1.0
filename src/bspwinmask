@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+
+##################################################
+# rudv-ar - 2026
+##################################################
+
+masked=$(bspc query -N -n .hidden -d focused)
+
+if [ -z "$masked" ]; then
+	bspc node focused -g hidden=on
+else
+	bspc node "$masked" -g hidden=off
+fi

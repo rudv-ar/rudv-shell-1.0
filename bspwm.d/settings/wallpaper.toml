@@ -1,0 +1,30 @@
+[config]
+_name = "wall"
+_path = "$HOME/.config/bspwm/bspwm.d/sources/wallpaper.sh"
+#_path = "./wallpaper.sh"
+_desc = "Wallpaper source, directories, display mode"
+
+[config.wallpaper]
+_prefix     = "wall"
+wallpaper   = "$HOME/.config/bspwm/walls.ref/080.png"
+dir         = "$HOME/.config/bspwm/walls/"
+disfree_dir = "$HOME/.config/bspwm/walls/disfree/"
+disfree     = true
+single      = false
+
+[config.wallpaper._rules]
+wallpaper.kind     = "wallpaper"
+wallpaper.selector = "feh --bg-scale"
+wallpaper.folder   = "$HOME/.config/bspwm/walls.ref/"
+wallpaper.desc     = "Active wallpaper image"
+wallpaper.label    = "Wallpaper"
+dir.kind           = "dir"
+dir.desc           = "Wallpaper pool directory"
+dir.label = "Random Wallpaper Dir"
+disfree_dir.kind   = "dir"
+disfree_dir.desc   = "NSFW-free wallpaper subdirectory"
+disfree_dir.label  = "Distraction Free Wall Dir"
+disfree.label      = "Distraction Free Mode"
+single.label       = "Single Wallpaper Mode"
+_prefix.label      = "Variable Prefix"
+_prefix.readonly   = true

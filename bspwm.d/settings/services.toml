@@ -1,0 +1,23 @@
+[config]
+_name = "svc"
+_path = "$HOME/.config/bspwm/bspwm.d/sources/services.sh"
+_desc = "Autostart service toggles"
+
+[config.services]
+_prefix = "svc"
+
+[config.services.picom]
+enabled = true
+
+[config.services.snapserver]
+enabled = true
+
+[config.services.vicinae]
+enabled = true
+
+[config.services.dunst]
+enabled = true
+
+[config.services.mpd]
+enabled = true
+

@@ -1,0 +1,70 @@
+[config]
+_name = "rudv-shell"
+_desc = "bspwm desktop config manifest"
+
+[profile]
+active = "default"
+
+[profile.default]
+includes = ["bspwm", "network", "wallpaper", "widget", "services", "compositor"]
+
+[profile.minimal]
+includes = ["bspwm", "wallpaper", "widget"]
+
+[profile.server]
+includes = ["bspwm", "network", "services"]
+
+[include.bspwm]
+path = "$HOME/.config/bspwm/bspwm.d/settings/bspwm.toml"
+[include.bspwm.gui]
+enabled = true
+label   = "WM"
+order   = 1
+
+[include.network]
+path = "$HOME/.config/bspwm/bspwm.d/settings/network.toml"
+[include.network.gui]
+enabled = true
+label   = "Network"
+order   = 2
+
+[include.wallpaper]
+path = "$HOME/.config/bspwm/bspwm.d/settings/wallpaper.toml"
+[include.wallpaper.gui]
+enabled = false
+label   = "Wallpaper"
+order   = 3
+
+[include.widget]
+path = "$HOME/.config/bspwm/bspwm.d/settings/widget.toml"
+[include.widget.gui]
+enabled = true
+label   = "Widget"
+order   = 4
+
+[include.services]
+path = "$HOME/.config/bspwm/bspwm.d/settings/services.toml"
+[include.services.gui]
+enabled = true
+label   = "Services"
+order   = 5
+
+[include.compositor]
+path = "$HOME/.config/bspwm/bspwm.d/settings/picom.toml"
+[include.compositor.gui]
+enabled = true
+label   = "Compositor"
+order   = 6
+
+
+[commands]
+[commands.reload]
+cmd = "bspc"
+args = ["wm", "-r"]
+
+[commands.sleep]
+cmd = "sleep"
+args = ["5"]
+[commands.notify]
+cmd  = "bash"
+args = ["-c", "DISPLAY=:0 notify-send 'Rudv-Shell' 'The bspwm configuration has been reloaded...'"]

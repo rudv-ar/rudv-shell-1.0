@@ -57,7 +57,7 @@ ShellRoot {
                         }
 
                         // Center zone — clock pill, truly centered
-                        ClockPill {
+                        ClockPillHover {
                             Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
                         }
 

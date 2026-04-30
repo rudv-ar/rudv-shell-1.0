@@ -23,21 +23,16 @@ Item {
     property real   itemSpacing:     Properties.pillHoverSpacing
     property int    animDuration:    Properties.pillHoverAnimDuration
 
-    property bool   alwaysExpanded:  false   // ← new
+    property bool   alwaysExpanded:  false
 
-    implicitWidth: paddingX * 2
-                 + primaryLabel.implicitWidth
-                 + (secondaryText !== ""
-                    ? itemSpacing * 2 + 1 + itemSpacing + secondaryLabel.implicitWidth
-                    : 0)
+    readonly property bool _expanded: alwaysExpanded || hoverHandler.hovered
+
+    implicitWidth:  bg.width
     implicitHeight: Properties.barHeight
 
-    property bool _hovered: false
-    readonly property bool _expanded: alwaysExpanded || _hovered   // ← drives everything
-
     HoverHandler {
-        enabled: !root.alwaysExpanded
-        onHoveredChanged: root._hovered = hovered
+        id: hoverHandler
+        cursorShape: Qt.PointingHandCursor
     }
 
     Rectangle {
@@ -46,10 +41,19 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         height: root.implicitHeight - root.paddingY * 2
         radius: root.pillRadius
-        color:  root._expanded ? root.pillBackgroundHovered : root.pillBackground
+
+        color: !root._expanded
+               ? root.pillBackground
+               : hoverHandler.hovered
+                 ? Theme.pillStaticHoverBackground
+                 : root.pillBackgroundHovered
 
         width: root._expanded
-               ? root.implicitWidth
+               ? (root.paddingX * 2
+                  + primaryLabel.implicitWidth
+                  + (secondaryText !== ""
+                     ? root.itemSpacing * 2 + 1 + root.itemSpacing + secondaryLabel.implicitWidth
+                     : 0))
                : (root.paddingX * 2 + primaryLabel.implicitWidth)
 
         Behavior on width {

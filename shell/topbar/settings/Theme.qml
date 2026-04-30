@@ -15,6 +15,7 @@ QtObject {
 
     // PillStatic
     readonly property color pillStaticBackground:    "#3B4252"
+    readonly property color pillStaticHoverBackground: "#3E475A"
     readonly property color pillStaticText:          "#ECEFF4"
 
     // Clock pill overrides (transparent center zone)

@@ -9,6 +9,7 @@ ShellRoot {
         model: Quickshell.screens
 
         delegate: Component {
+	    
             PanelWindow {
                 id: win
                 required property var modelData

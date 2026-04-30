@@ -1,4 +1,3 @@
 ./apps/tor-instance 
 apps/tor-instance
-bspwm.log
-./bspwm.log
+

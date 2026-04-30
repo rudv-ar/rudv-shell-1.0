@@ -1,3 +1,0 @@
-#!/bin/bash 
-
-~/.local/bin/toml-gui "$HOME/.config/bspwm/bspwm.d/settings/main.toml"

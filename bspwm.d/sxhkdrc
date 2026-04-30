@@ -13,7 +13,7 @@ super + Return
 # Terminal (floating)
 super + shift + Return
 	bspterm --float
-	
+
 
 # Terminal (fullscreen)
 super + alt + Return
@@ -32,7 +32,7 @@ super + shift + {w,e}
 
 # Terminal Apps
 ctrl + alt + {v,r,h}
-	alacritty --config-file ~/.config/bspwm/apps/alacritty/alacritty.toml -e {vim,ranger,btop}
+	alacritty --config-file ~/.config/bspwm/apps/alacritty/alacritty.toml -e {nvim,ranger,btop}
 
 # Color Picker
 super + p
@@ -170,13 +170,18 @@ ctrl + Print
 
 # Take screenshot of area
 super + Print
-	bspscreenshot --area
+	rofi_screenshot
 
 
 ##----------CUSTOM-MADE----##
 
 F1
     thunar
+
+super + ctrl + F1
+    thunar_pseudo
+super + shift + F1
+    bspc rule -a Thunar --one-shot state=floating center=true rectangle=800x600+0+0 &&thunar
 
 super + space
     vicinae toggle
@@ -191,13 +196,16 @@ ctrl + alt + w
     vicinae deeplink vicinae://extensions/tonka3000/weather/index
 
 super + n
-    vicinae-wifi
+    vicinae deeplink vicinae://launch/@dagimg-dot/store.vicinae.wifi-commander/scan-wifi
 
 super + o
     vicinae deeplink vicinae://extensions/vicinae/wm/switch-windows
 
 super + r
-    yexec
+    ~/.config/bspwm/scripts/rofi_runner
+
+super + w
+    wallpicker
 
 ################# POWER MANAGEMENT #############################################
 
@@ -210,16 +218,10 @@ alt + Delete + r
 alt + Delete + l
     bspc quit
 
+alt + F4
+    rofi_powermenu
+
+
 ################ YAD Windows ####################################################
 
-super + w 
-    ~/.local/bin/ty-wall
 
-super + s 
-    bspwm-settings
-
-ctrl + alt + p 
-    picom-settings 
-
-ctrl + alt + d 
-    quickshell --path ~/.config/bspwm/widgets/quickshell/dash.qml &

@@ -1,3 +1,0 @@
-#!/bin/bash
-
-yad --calendar --no-buttons --day=$(date +%d) --mouse

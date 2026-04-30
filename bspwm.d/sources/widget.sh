@@ -5,9 +5,11 @@
 
 ############################################# WIDGET ##############################################
 # is widget system enabled?
-is_widget=true
+is_widget=false
 
 # what widget bar is the system using?
-widget_bar='quickshell'
+widget_bar='polybar'
+
+is_plank=true
 
 # [ tip : the other bars include : polybar, eww, quickshell, lemonbar, etc]

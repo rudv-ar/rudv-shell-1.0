@@ -1,4 +1,0 @@
-#!/bin/bash 
-
-~/.local/bin/toml-gui "$HOME/.config/bspwm/bspwm.d/picom/picom.toml" "$HOME/.config/bspwm/bspwm.d/picom/picom-settings.sh" 
-

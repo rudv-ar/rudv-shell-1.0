@@ -18,3 +18,6 @@ is_svc_snapserver=true
 
 # what about vicinae?
 is_svc_vicinae=true
+
+# now comming to kdeconnectd
+is_svc_kdeconnectd=true

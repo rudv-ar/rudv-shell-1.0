@@ -12,7 +12,7 @@ source "$BSPDIR/bspwm.d/sources/network.sh"
 
 # ── Kill existing instances ───────────────────────────────────────────────────
 killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager \
-            bspc polybar quickshell qs snapserver picom tor vicinae
+            bspc polybar quickshell qs snapserver picom tor vicinae plank
 
 # ── Polkit agent ──────────────────────────────────────────────────────────────
 [[ ! $(pidof xfce-polkit) ]] && /usr/lib/xfce-polkit/xfce-polkit &
@@ -39,15 +39,21 @@ else
     feh -z --no-fehbg --bg-fill "$wall_dir"
 fi
 
+pkill kdeconnectd
+if [[ $is_svc_kdeconnectd == true ]]; then
+    kdeconnectd &
+fi
+
+
 # ── Vicinae ───────────────────────────────────────────────────────────────────
 pkill vicinae
 if [[ $is_svc_vicinae == true ]]; then
     vicinae server &
-    vicinae server --replace &
 fi
 
 # ── Widget bar ────────────────────────────────────────────────────────────────
 [[ $is_widget == true ]] && bash "$BSPDIR/widgets/$widget_bar/launch.sh" &
+[[ $is_plank == true ]] && plank &
 
 # ── Dunst ─────────────────────────────────────────────────────────────────────
 [[ $is_svc_dunst == true ]] && bspdunst &
@@ -83,3 +89,5 @@ if [[ $is_svc_snapserver == true ]]; then
     snapserver &
 fi
 
+##---------------------------------------- Manager Scripts : All those use bspc subscribe to bring about some action----------------------------
+bash "$BSPDIR/bspwm.d/exter_rules/raise_plank.sh" &

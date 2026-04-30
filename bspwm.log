@@ -1,0 +1,386 @@
+/home/cobra/.config/bspwm/bspwm.d/sources/bspwm.sh: line 8: /home/rudv-ar/.config/bspwm/bspwm.d/exports.sh: No such file or directory
+/home/cobra/.config/bspwm/bspwm.d/config.sh: line 18: /home/cobra/.config/bspwm/bspwm.d/wm.sh: No such file or directory
+xsettingsd: no process found
+sxhkd: no process found
+dunst: no process found
+ksuperkey: no process found
+xfce4-power-manager: no process found
+bspc: no process found
+polybar: no process found
+quickshell: no process found
+qs: no process found
+snapserver: no process found
+picom: no process found
+tor: no process found
+vicinae: no process found
+plank: no process found
+Hotkey interference found and may not be matched: 'F11' (from 'F11').
+Hotkey interference found and may not be matched: 'F12' (from 'F12').
+MESSAGE: Setting 'height' has changed behaviour after dunst 1.12.0, see https://dunst-project.org/release/#v1.12.0.
+MESSAGE: Legacy height support may be dropped in the future. If you want to hide this message transition to
+MESSAGE: 'height = (0, X)' for dynamic height (old behaviour equivalent) or to 'height = (X, X)' for a fixed height.
+MESSAGE: Using legacy offset syntax NxN, you should switch to the new syntax (N, N)
+WARNING: No locale support
+picom restarted — /home/cobra/.config/bspwm/bspwm.d/picom/picom.conf
+536870916
+Failure: Not supported
+/home/cobra/.config/bspwm/bspwm.d/autostart.sh: line 89: snapserver: command not found
+[37m[12:54:49.985] [32mINFO [0m  -  Activated clipboard server "x11" [0m
+[37m[12:54:51.297] [32mINFO [0m  -  Started extension manager /run/user/1000/vicinae/extension-manager.js with /usr/bin/node [0m
+[37m[12:54:51.548] [33mWARN [0m  -  Failed to parse news state: "file_open_failure" [0m
+[37m[12:54:51.604] [32mINFO [0m  -  Starting clipboard server "x11" [0m
+[37m[12:54:51.604] [32mINFO [0m  -  Clipboard server "x11" started successfully. [0m
+[37m[12:54:51.604] [32mINFO [0m  -  Starting incremental scan for entrypoint /home/cobra [0m
+[37m[12:54:54.317] [32mINFO [0m  -  Started "Qalculate!" calculator backend [0m
+[37m[12:54:54.318] [32mINFO [0m  -  Refreshing Qalculate exchange rates... [0m
+[37m[12:54:54.325] [33mWARN [0m  -  Failed to refresh exchange rates Failed to fetch exchange rates [0m
+[37m[12:54:58.064] [33mWARN [0m  -  Ignoring icon theme directory with no index.theme at /usr/share/icons/Tango/index.theme [0m
+[37m[12:54:59.786] [33mWARN [0m  -  Ignoring icon theme directory with no index.theme at /usr/share/icons/locolor/index.theme [0m
+[37m[12:54:59.997] [32mINFO [0m  -  Anonymous telemetry is enabled. Learn more: https://docs.vicinae.com/telemetry [0m
+[37m[12:55:01.649] [33mWARN [0m  -  qrc:/Vicinae/GenericListView.qml:133:5: QML Connections: Detected function "onSelectedIndexChanged" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name. ([34mGenericListView.qml:133[0m)[0m
+[37m[12:55:01.653] [32mINFO [0m  -  Vicinae server successfully started. Call "vicinae toggle" to toggle the window [0m
+[37m[12:55:01.735] [33mWARN [0m  -  Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'vicinae'") [0m
+[37m[12:55:01.737] [33mWARN [0m  -  Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'vicinae'") [0m
+[37m[12:55:02.205] [32mINFO [0m  -  Done walking file tree at /home/cobra. Processed 1300 directories and 6590 files in 10 seconds. [0m
+
+xkbcommon: ERROR: [XKB-679] No Compose file for locale "en_IN.ISO8859-1": locale is either invalid or not installed
+xkbcommon: ERROR: [XKB-679] couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+
+
+xkbcommon: ERROR: [XKB-679] No Compose file for locale "en_IN.ISO8859-1": locale is either invalid or not installed
+xkbcommon: ERROR: [XKB-679] couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+
+
+xkbcommon: ERROR: [XKB-679] No Compose file for locale "en_IN.ISO8859-1": locale is either invalid or not installed
+xkbcommon: ERROR: [XKB-679] couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+
+
+
+xkbcommon: ERROR: [XKB-679] No Compose file for locale "en_IN.ISO8859-1": locale is either invalid or not installed
+xkbcommon: ERROR: [XKB-679] couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+
+[37m[12:58:32.876] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[12:58:32.876] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="7 bytes", password=false) [0m
+WARNING: The convert command is deprecated in IMv7, use "magick" instead of "convert" or "magick convert"
+
+
+
+
+
+[37m[12:59:52.926] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[12:59:52.926] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="7 bytes", password=false) [0m
+[37m[12:59:52.927] [32mINFO [0m  -  A similar clipboard selection is already indexed: moving it on top of the history [0m
+
+[37m[13:00:28.627] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:00:28.627] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="7 bytes", password=false) [0m
+[37m[13:00:28.629] [32mINFO [0m  -  A similar clipboard selection is already indexed: moving it on top of the history [0m
+WARNING: The convert command is deprecated in IMv7, use "magick" instead of "convert" or "magick convert"
+
+
+[37m[13:01:25.399] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:01:25.399] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="7 bytes", password=false) [0m
+[37m[13:01:25.401] [32mINFO [0m  -  A similar clipboard selection is already indexed: moving it on top of the history [0m
+WARNING: The convert command is deprecated in IMv7, use "magick" instead of "convert" or "magick convert"
+
+
+
+desktop: Unknown command: '--follow'.
+
+xkbcommon: ERROR: [XKB-679] No Compose file for locale "en_IN.ISO8859-1": locale is either invalid or not installed
+xkbcommon: ERROR: [XKB-679] couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+xkbcommon: ERROR: [XKB-679] No Compose file for locale "en_IN.ISO8859-1": locale is either invalid or not installed
+xkbcommon: ERROR: [XKB-679] couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[37m[13:11:57.638] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:11:57.638] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="857 bytes", password=false) [0m
+[37m[13:13:03.277] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:13:03.277] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="0 bytes", password=false) [0m
+[37m[13:13:03.277] [32mINFO [0m  -  Ignored clipboard clear selection [0m
+[37m[13:13:03.281] [32mINFO [0m  -  Received new clipboard selection with 0 offers [0m
+[37m[13:13:03.281] [32mINFO [0m  -  Ignored clipboard clear selection [0m
+[37m[13:13:03.285] [32mINFO [0m  -  Received new clipboard selection with 0 offers [0m
+[37m[13:13:03.285] [32mINFO [0m  -  Ignored clipboard clear selection [0m
+[37m[13:13:03.290] [32mINFO [0m  -  Received new clipboard selection with 0 offers [0m
+[37m[13:13:03.290] [32mINFO [0m  -  Ignored clipboard clear selection [0m
+[37m[13:13:03.292] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:13:03.292] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="192 bytes", password=false) [0m
+[37m[13:13:03.462] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:13:03.462] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="192 bytes", password=false) [0m
+[37m[13:13:03.463] [32mINFO [0m  -  A similar clipboard selection is already indexed: moving it on top of the history [0m
+[37m[13:13:24.856] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:13:24.856] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="400 bytes", password=false) [0m
+[37m[13:13:52.495] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:13:52.495] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="405 bytes", password=false) [0m
+[37m[13:14:14.274] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:14:14.274] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="291 bytes", password=false) [0m
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+desktop: Unknown command: '--follow'.
+
+
+
+
+
+
+
+
+
+desktop: Unknown command: '--follow'.
+
+xkbcommon: ERROR: [XKB-679] No Compose file for locale "en_IN.ISO8859-1": locale is either invalid or not installed
+xkbcommon: ERROR: [XKB-679] couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+[37m[13:22:49.301] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:22:49.301] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="2.73 KB", password=false) [0m
+[37m[13:22:52.982] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:22:52.983] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="2.73 KB", password=false) [0m
+[37m[13:22:52.984] [32mINFO [0m  -  A similar clipboard selection is already indexed: moving it on top of the history [0m
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+[37m[13:23:31.286] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:23:31.286] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="2.87 KB", password=false) [0m
+[37m[13:23:31.485] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:23:31.485] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="2.87 KB", password=false) [0m
+[37m[13:23:31.486] [32mINFO [0m  -  A similar clipboard selection is already indexed: moving it on top of the history [0m
+[37m[13:24:04.301] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:24:04.301] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="1.18 KB", password=false) [0m
+[37m[13:24:23.719] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:24:23.719] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="3.71 KB", password=false) [0m
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+[37m[13:25:04.832] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:25:04.832] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="618 bytes", password=false) [0m
+[37m[13:25:06.658] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:25:06.658] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="618 bytes", password=false) [0m
+[37m[13:25:06.660] [32mINFO [0m  -  A similar clipboard selection is already indexed: moving it on top of the history [0m
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+[37m[13:25:11.158] [33mWARN [0m  -  failed to create compose table [0m
+[37m[13:25:12.063] [32mINFO [0m  -  App started with command line "kdeconnect-app" [0m
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+
+
+
+
+
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+xkbcommon: ERROR: [XKB-679] No Compose file for locale "en_IN.ISO8859-1": locale is either invalid or not installed
+xkbcommon: ERROR: [XKB-679] couldn't find a Compose file for locale "en_IN" (mapped to "en_IN.ISO8859-1")
+
+desktop: Unknown command: '--follow'.
+
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+[37m[13:53:04.737] [32mINFO [0m  -  app directory "/usr/share/applications" changed, launching a new scan [0m
+[37m[13:53:06.678] [32mINFO [0m  -  app directory "/usr/share/applications" changed, launching a new scan [0m
+[37m[13:53:49.500] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:53:49.500] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="18.0 KB", password=false) [0m
+
+[37m[13:54:01.355] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:54:01.355] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="89 bytes", password=false) [0m
+
+
+[37m[13:54:21.933] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:54:21.933] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="1014 bytes", password=false) [0m
+
+
+[37m[13:54:35.810] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:54:35.811] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="2.11 KB", password=false) [0m
+
+
+
+
+
+[37m[13:54:52.394] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:54:52.394] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="79 bytes", password=false) [0m
+
+
+[37m[13:55:09.864] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:55:09.865] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="5.29 KB", password=false) [0m
+
+
+[37m[13:55:28.747] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:55:28.747] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="1.15 KB", password=false) [0m
+
+
+
+
+[37m[13:55:43.150] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:55:43.150] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="69 bytes", password=false) [0m
+
+
+[37m[13:56:35.624] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:56:35.624] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="3.32 KB", password=false) [0m
+
+
+[37m[13:56:49.994] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:56:49.995] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="52 bytes", password=false) [0m
+
+
+[37m[13:57:12.722] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:57:12.722] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="1.48 KB", password=false) [0m
+
+
+[37m[13:57:26.224] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:57:26.225] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="2.64 KB", password=false) [0m
+
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+[37m[13:58:39.227] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:58:39.228] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="546 bytes", password=false) [0m
+[37m[13:58:39.879] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[13:58:39.879] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="546 bytes", password=false) [0m
+[37m[13:58:39.880] [32mINFO [0m  -  A similar clipboard selection is already indexed: moving it on top of the history [0m
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+[37m[14:01:04.739] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[14:01:04.739] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="9.15 KB", password=false) [0m
+[37m[14:01:17.655] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[14:01:17.655] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="2.41 KB", password=false) [0m
+
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+
+[37m[14:01:36.139] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[14:01:36.139] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="4.81 KB", password=false) [0m
+
+
+[37m[14:01:58.214] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[14:01:58.214] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="1.20 KB", password=false) [0m
+
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+[37m[14:05:06.911] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[14:05:06.911] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="710 bytes", password=false) [0m
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+[37m[14:07:11.965] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[14:07:11.965] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="4.31 KB", password=false) [0m
+[37m[14:07:32.778] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[14:07:32.778] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="969 bytes", password=false) [0m
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+desktop: Unknown command: '--follow'.
+
+
+[37m[14:12:53.742] [32mINFO [0m  -  Received new clipboard selection with 1 offers [0m
+[37m[14:12:53.742] [32mINFO [0m  -  "text/plain;charset=utf-8" (size="40 bytes", password=false) [0m
+
+
+
+

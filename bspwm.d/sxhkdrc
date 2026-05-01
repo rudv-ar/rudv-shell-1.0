@@ -8,7 +8,7 @@
 
 # Terminal (alacritty)
 super + Return
-	alacritty
+	alacritty --config-file ~/.config/bspwm/apps/alacritty/alacritty.toml
 
 # Terminal (floating)
 super + shift + Return

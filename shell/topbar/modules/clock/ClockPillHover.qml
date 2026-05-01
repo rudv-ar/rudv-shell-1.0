@@ -9,7 +9,7 @@ PillHover {
         ClockService.showSeconds = Properties.clockShowSeconds
     }
 
-    alwaysExpanded: true
+    alwaysExpanded: Properties.clockPillIsExpanded
 
     primaryText:   ClockService.timeString
     secondaryText: ClockService.dateString

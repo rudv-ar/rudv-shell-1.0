@@ -27,6 +27,7 @@ QtObject {
     readonly property bool   clockUse24h:              true
     readonly property bool   clockShowSeconds:          false
     readonly property bool   clockPillShowTimeFirst:    true   // time visible by default; hover → date
+    property bool clockPillIsExpanded: true
     readonly property int    clockPillTimeFontSize:     13
     readonly property int    clockPillDateFontSize:     12
     readonly property string clockPillFontFamily:       "Sans"

@@ -3,13 +3,13 @@ import QtQuick.Layouts
 import Quickshell
 import qs.settings
 import qs.modules.clock
+import qs.modules.workspace
 
 ShellRoot {
     Variants {
         model: Quickshell.screens
 
         delegate: Component {
-	    
             PanelWindow {
                 id: win
                 required property var modelData
@@ -20,19 +20,18 @@ ShellRoot {
                 anchors.left:  true
                 anchors.right: true
 
-                // PanelWindow is transparent; the visual bar is the Rectangle below
                 color:         "transparent"
                 implicitHeight: Properties.barHeight + Properties.barMarginTop
 
-                // ── Visual bar ───────────────────────────────────────────────
+                // ── Visual bar ────────────────────────────────────────────────
                 Rectangle {
                     id: bar
 
-                    anchors.top:        parent.top
-                    anchors.topMargin:  Properties.barMarginTop
-                    anchors.left:       parent.left
-                    anchors.leftMargin: Properties.barMarginLeft
-                    anchors.right:      parent.right
+                    anchors.top:         parent.top
+                    anchors.topMargin:   Properties.barMarginTop
+                    anchors.left:        parent.left
+                    anchors.leftMargin:  Properties.barMarginLeft
+                    anchors.right:       parent.right
                     anchors.rightMargin: Properties.barMarginRight
 
                     height: Properties.barHeight
@@ -42,30 +41,33 @@ ShellRoot {
                     border.color: Theme.barBorder
                     border.width: Properties.barFloating ? 1 : 0
 
-                    // ── Three-zone layout ────────────────────────────────────
+                    // ── Three-zone layout ─────────────────────────────────────
                     RowLayout {
                         anchors.fill:        parent
                         anchors.leftMargin:  Properties.barPaddingX
                         anchors.rightMargin: Properties.barPaddingX
                         spacing: 0
 
-                        // Left zone
+                        // Left zone — workspace indicator
                         Item {
-                            Layout.fillWidth: true
+                            Layout.fillWidth:    true
                             Layout.preferredWidth: 0
-                            // modules go here later
+
+                            WorkspaceIndicator {
+                                anchors.verticalCenter: parent.verticalCenter
+                                anchors.left:           parent.left
+                            }
                         }
 
-                        // Center zone — clock pill, truly centered
+                        // Center zone — clock, truly centered
                         ClockPillHover {
                             Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
                         }
 
-                        // Right zone
+                        // Right zone — empty for now
                         Item {
-                            Layout.fillWidth: true
+                            Layout.fillWidth:    true
                             Layout.preferredWidth: 0
-                            // modules go here later
                         }
                     }
                 }

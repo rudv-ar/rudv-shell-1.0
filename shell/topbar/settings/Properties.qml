@@ -12,14 +12,14 @@ QtObject {
     readonly property real   barPaddingX:        12
 
     // ── PillHover ────────────────────────────────────────────────────────────
-    readonly property real   pillHoverRadius:       10
+    readonly property real   pillHoverRadius:       15
     readonly property real   pillHoverPaddingX:     10
     readonly property real   pillHoverPaddingY:     4
     readonly property real   pillHoverSpacing:      6
     readonly property int    pillHoverAnimDuration: 180
 
     // ── PillStatic ───────────────────────────────────────────────────────────
-    readonly property real   pillStaticRadius:   10
+    readonly property real   pillStaticRadius:   15
     readonly property real   pillStaticPaddingX: 10
     readonly property real   pillStaticPaddingY: 4
 
@@ -41,7 +41,7 @@ QtObject {
     readonly property int    workspaceDotAnimDuration:         150
     readonly property real   workspaceIndicatorPaddingX:       10
     readonly property real   workspaceIndicatorPaddingY:       4
-    readonly property real   workspaceIndicatorRadius:         10
+    readonly property real   workspaceIndicatorRadius:         15
     readonly property bool   workspaceIndicatorAlwaysExpanded: false
 
 

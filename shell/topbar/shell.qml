@@ -4,6 +4,7 @@ import Quickshell
 import qs.settings
 import qs.modules.clock
 import qs.modules.workspace
+import qs.modules.audio
 
 ShellRoot {
     Variants {
@@ -20,10 +21,9 @@ ShellRoot {
                 anchors.left:  true
                 anchors.right: true
 
-                color:         "transparent"
+                color:          "transparent"
                 implicitHeight: Properties.barHeight + Properties.barMarginTop
 
-                // ── Visual bar ────────────────────────────────────────────────
                 Rectangle {
                     id: bar
 
@@ -41,16 +41,15 @@ ShellRoot {
                     border.color: Theme.barBorder
                     border.width: Properties.barFloating ? 1 : 0
 
-                    // ── Three-zone layout ─────────────────────────────────────
                     RowLayout {
                         anchors.fill:        parent
                         anchors.leftMargin:  Properties.barPaddingX
                         anchors.rightMargin: Properties.barPaddingX
                         spacing: 0
 
-                        // Left zone — workspace indicator
+                        // ── Left ──────────────────────────────────────────────
                         Item {
-                            Layout.fillWidth:    true
+                            Layout.fillWidth:     true
                             Layout.preferredWidth: 0
 
                             WorkspaceIndicator {
@@ -59,15 +58,26 @@ ShellRoot {
                             }
                         }
 
-                        // Center zone — clock, truly centered
+                        // ── Center ────────────────────────────────────────────
                         ClockPillHover {
                             Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
                         }
 
-                        // Right zone — empty for now
+                        // ── Right ─────────────────────────────────────────────
                         Item {
-                            Layout.fillWidth:    true
+                            Layout.fillWidth:     true
                             Layout.preferredWidth: 0
+
+                            Row {
+                                anchors.verticalCenter: parent.verticalCenter
+                                anchors.right:          parent.right
+                                spacing: Properties.rightbarChipSpacing
+
+                                NetworkPill      {}
+                                NotificationPill {}
+                                AudioPill        {}
+                                PowerPill        {}
+                            }
                         }
                     }
                 }

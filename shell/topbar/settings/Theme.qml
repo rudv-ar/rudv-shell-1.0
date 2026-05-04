@@ -51,4 +51,8 @@ QtObject {
     readonly property color workspaceIconBackground:        nord1
     readonly property color workspaceIconBackgroundHovered: nord2
     readonly property color workspaceIconColor:             nord8
+
+    // ── Audio / BasePill ──────────────────────────────────────────────────────
+    readonly property color audioError: "#BF616A"
+    
 }

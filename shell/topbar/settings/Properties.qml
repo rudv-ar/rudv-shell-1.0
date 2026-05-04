@@ -52,16 +52,46 @@ QtObject {
     readonly property int    workspaceIconFontSize: 14
     readonly property real   workspaceIconGap:      6     // gap between icon pill and dots pill
 
+    //readonly property var workspaceIconGlyphs: ({
+    //    "1": "\uf303",   // arch linux
+    //    "2": "\uf489",   // terminal
+    //    "3": "\uf269",   // firefox
+    //    "4": "\ue70c",   // vim/editor
+    //    "5": "\uf001",   // music
+    //    "6": "\uf07c",   // files
+    //    "7": "\uf086",   // chat
+    //    "8": "\uf013"    // settings
+    //})
     readonly property var workspaceIconGlyphs: ({
         "1": "\uf303",   // arch linux
-        "2": "\uf489",   // terminal
-        "3": "\uf269",   // firefox
-        "4": "\ue70c",   // vim/editor
-        "5": "\uf001",   // music
-        "6": "\uf07c",   // files
-        "7": "\uf086",   // chat
-        "8": "\uf013"    // settings
+        "2": "\uf303",   // terminal
+        "3": "\uf303",   // firefox
+        "4": "\uf303",   // vim/editor
+        "5": "\uf303",   // music
+        "6": "\uf303",   // files
+        "7": "\uf303",   // chat
+        "8": "\uf303"    // settings
     })
+
+    // ── BasePill ──────────────────────────────────────────────────────────────
+    readonly property real   basePillHeight:             24
+    readonly property real   basePillRadius:             15
+    readonly property real   basePillPadding:            4
+    readonly property real   basePillIconBgSize:         18
+    readonly property real   basePillIconBgRadius:       15
+    readonly property real   basePillIconSize:           12
+    readonly property real   basePillSpacing:            6
+    readonly property int    basePillFontSize:           12
+    readonly property int    basePillExpandDuration:     180
+    readonly property int    basePillIconRotateDuration: 400
+    readonly property bool   basePillHoverEnabled:       true
+    readonly property bool   basePillIconRotateEnabled:  true
+
+    // ── Rightbar ──────────────────────────────────────────────────────────────
+    readonly property real   rightbarChipSpacing:        6
+    readonly property string rightbarNetworkGlyph:       "\uf1eb"
+    readonly property string rightbarNotificationGlyph:  "\uf0f3"
+    readonly property string rightbarPowerGlyph:         "\uf011"
     
 }
 

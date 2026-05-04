@@ -35,9 +35,9 @@ QtObject {
     // ── Workspace ─────────────────────────────────────────────────────────────
     readonly property var    workspaceNames:                   ["1","2","3","4","5","6","7","8"]
     readonly property real   workspaceDotSize:                 14
-    readonly property real   workspaceDotFocusedWidth:         25
+    readonly property real   workspaceDotFocusedWidth:         28
     readonly property real   workspaceDotRadius:               10
-    readonly property real   workspaceDotSpacing:              4
+    readonly property real   workspaceDotSpacing:              5
     readonly property int    workspaceDotAnimDuration:         150
     readonly property real   workspaceIndicatorPaddingX:       10
     readonly property real   workspaceIndicatorPaddingY:       4

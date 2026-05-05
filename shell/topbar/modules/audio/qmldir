@@ -1,6 +1,5 @@
 module qs.modules.audio
 AudioPill        1.0 AudioPill.qml
-NetworkPill      1.0 NetworkPill.qml
 NotificationPill 1.0 NotificationPill.qml
 PowerPill        1.0 PowerPill.qml
 

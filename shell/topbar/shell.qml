@@ -5,6 +5,7 @@ import qs.settings
 import qs.modules.clock
 import qs.modules.workspace
 import qs.modules.audio
+import qs.modules.network
 
 ShellRoot {
     Variants {

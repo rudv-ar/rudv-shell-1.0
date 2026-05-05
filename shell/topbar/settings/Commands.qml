@@ -20,6 +20,25 @@ QtObject {
     function rofiLauncher() {
         return ["rofi_launcher"]
     }
-  
+
+
+    // ── Network ───────────────────────────────────────────────────────────────
+    function networkState() {
+        return ["nmcli", "-t", "-f", "active,type,name,device",
+                "connection", "show", "--active"]
+    }
+    function networkIp(device) {
+        return ["nmcli", "-t", "-f", "IP4.ADDRESS",
+                "device", "show", device]
+    }
+    function networkEditor() {
+        return ["nm-connection-editor"]
+    }
+    function networkConnEdit() {
+        return ["vicinae", "deeplink", "vicinae://launch/@dagimg-dot/store.vicinae.wifi-commander/scan-wifi"]
+    }
+    
 }
+
+
 

@@ -24,7 +24,7 @@ Singleton {
         if (muted || volume <= 0.0) return "\uf6a9"
         if (volume < 0.34)          return "\uf026"
         if (volume < 0.67)          return "\uf027"
-        return                             "\uf028"
+        return                             "\uf028"    
     }
 
     function setVolume(v) {

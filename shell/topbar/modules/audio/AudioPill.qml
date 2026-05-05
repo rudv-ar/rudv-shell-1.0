@@ -18,7 +18,7 @@ Item {
         id: _pill
 
         glyph:         AudioService.iconGlyph
-        fontFamily:    Properties.nerdFontFamily
+        fontFamily:    Theme.fontAwesome6
         label:         AudioService.volumeString
         popoutOpen:    root.popoutOpen
         alwaysExpanded: false

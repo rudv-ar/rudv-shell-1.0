@@ -92,6 +92,10 @@ QtObject {
     readonly property string rightbarNetworkGlyph:       "\uf1eb"
     readonly property string rightbarNotificationGlyph:  "\uf0f3"
     readonly property string rightbarPowerGlyph:         "\uf011"
+
+    // ── Network ───────────────────────────────────────────────────────────────
+    readonly property int    networkPollInterval:       10000
+    readonly property string networkHoverMode:          "ssid"   // "ssid" | "ip"
     
 }
 

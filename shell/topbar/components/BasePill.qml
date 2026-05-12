@@ -10,8 +10,8 @@ Item {
     property bool   popoutOpen:   false
     property bool   muted:        false
     property bool   alwaysExpanded: false          // ← NEW
-    property color  accentColor:  Theme.nord8
-    property color  accentOnColor: Theme.nord0
+    property color  accentColor:  Theme.base0C//Theme.nord8
+    property color  accentOnColor: Theme.base00
 
     signal clicked(var mouse)
     signal scrolled(real delta)
@@ -32,14 +32,14 @@ Item {
         radius: Properties.basePillRadius
 
         color: root.popoutOpen
-               ? Theme.nord1
+               ? Theme.base01
                : root.muted
                  ? Qt.rgba(Theme.audioError.r,
                            Theme.audioError.g,
                            Theme.audioError.b, 0.18)
                  : root._active
-                   ? Theme.nord2
-                   : Theme.nord1
+                   ? Theme.base02
+                   : Theme.base01
 
         implicitWidth: {
             const base = Properties.basePillPadding
@@ -78,7 +78,7 @@ Item {
 
             color: root._active && Properties.basePillHoverEnabled
                    ? (root.muted ? Theme.audioError : root.accentColor)
-                   : Theme.nord1
+                   : Theme.base01
 
             Behavior on color {
                 ColorAnimation { duration: Properties.basePillExpandDuration }
@@ -94,8 +94,8 @@ Item {
                 font.weight:      Font.Black
 
                 color: root._active && Properties.basePillHoverEnabled
-                       ? (root.muted ? Theme.nord0 : root.accentOnColor)
-                       : (root.muted ? Theme.audioError : Theme.nord6)
+                       ? (root.muted ? Theme.base00 : root.accentOnColor)
+                       : (root.muted ? Theme.audioError : Theme.base06)
 
                 rotation: root._active
                           && Properties.basePillIconRotateEnabled ? 360 : 0

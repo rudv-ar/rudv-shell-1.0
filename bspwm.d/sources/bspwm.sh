@@ -42,10 +42,10 @@ bspwm_scheme_automatic_scheme='spiral'
 bspwm_window_gapped_gap=10
 
 # set additional window manager padding
-bspwm_window_padded_bottom=0
-bspwm_window_padded_left=0
-bspwm_window_padded_right=0
-bspwm_window_padded_top=0
+bspwm_window_padded_bottom=10
+bspwm_window_padded_left=10
+bspwm_window_padded_right=10
+bspwm_window_padded_top=35
 
 # set the status prefix
 bspwm_window_prefix=''

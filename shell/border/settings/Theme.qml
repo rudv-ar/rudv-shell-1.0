@@ -343,41 +343,8 @@ Singleton {
     readonly property color nord8:  "#88C0D0"
     readonly property color nord9:  "#81A1C1"
     readonly property color nord10: "#5E81AC"
-    readonly property color audioError: "#BF616A"
-    // ── Bar ───────────────────────────────────────────────────────────────────
-    readonly property color barBackground: base00
-    readonly property color barBorder: outline    
 
-    // ── PillHover ─────────────────────────────────────────────────────────────
-    readonly property color pillHoverBackground:        base01// nord1
-    readonly property color pillHoverBackgroundHovered: base02//nord2
-    readonly property color pillHoverPrimaryText:       inverseSurface//nord6
-    readonly property color pillHoverSecondaryText:     inverseSurface//nord6
-    readonly property color pillHoverSeparator:         secondaryP60//nord3
-
-    // ── PillStatic ────────────────────────────────────────────────────────────
-    readonly property color pillStaticBackground:      base01//nord1
-    readonly property color pillStaticHoverBackground: base02//nord2
-    readonly property color pillStaticText:            inverseSurface//nord6
-
-    // ── Clock ─────────────────────────────────────────────────────────────────
-    readonly property color clockPillBackground:     base01//nord1
-    readonly property color clockPillTimeColor:      inverseSurface //nord6
-    readonly property color clockPillDateColor:      base0C//nord8
-    readonly property color clockPillSeparatorColor: secondaryP60//nord3
-
-    // ── Workspace dots ────────────────────────────────────────────────────────
-    readonly property color workspaceDotFocusedColor:            base0C
-    readonly property color workspaceDotOccupiedColor:           inverseSurface//nord6
-    readonly property color workspaceDotEmptyColor:              base01//nord1
-    readonly property color workspaceIndicatorBackground:        base01//nord1
-    readonly property color workspaceIndicatorBackgroundHovered: base02//nord2
-
-    // ── Workspace icon ────────────────────────────────────────────────────────
-    readonly property color workspaceIconBackground:        base01//nord1
-    readonly property color workspaceIconBackgroundHovered: base02//nord2
-    readonly property color workspaceIconColor:             base0C//nord8
-
-    // ── Audio / BasePill ──────────────────────────────────────────────────────
+    //-- border
+    readonly property color borderColor: base00
     
 }

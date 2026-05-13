@@ -42,7 +42,7 @@ QtObject {
     readonly property real   workspaceIndicatorPaddingX:       10
     readonly property real   workspaceIndicatorPaddingY:       4
     readonly property real   workspaceIndicatorRadius:         15
-    readonly property bool   workspaceIndicatorAlwaysExpanded: false
+    readonly property bool   workspaceIndicatorAlwaysExpanded: true
 
 
     // "none" | "collapsed" | "expanded" | "always"

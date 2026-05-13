@@ -343,41 +343,48 @@ Singleton {
     readonly property color nord8:  "#88C0D0"
     readonly property color nord9:  "#81A1C1"
     readonly property color nord10: "#5E81AC"
-    readonly property color audioError: "#BF616A"
-    // ── Bar ───────────────────────────────────────────────────────────────────
-    readonly property color barBackground: base00
-    readonly property color barBorder: outline    
 
-    // ── PillHover ─────────────────────────────────────────────────────────────
-    readonly property color pillHoverBackground:        base01// nord1
-    readonly property color pillHoverBackgroundHovered: base02//nord2
-    readonly property color pillHoverPrimaryText:       inverseSurface//nord6
-    readonly property color pillHoverSecondaryText:     inverseSurface//nord6
-    readonly property color pillHoverSeparator:         secondaryP60//nord3
 
-    // ── PillStatic ────────────────────────────────────────────────────────────
-    readonly property color pillStaticBackground:      base01//nord1
-    readonly property color pillStaticHoverBackground: base02//nord2
-    readonly property color pillStaticText:            inverseSurface//nord6
+ // ── Bar ───────────────────────────────────────────────────────────────────
+readonly property color barBackground: background    // #101418 — deep navy black
+readonly property color barBorder:     base02        // #4c5c69 — subtle rim
 
-    // ── Clock ─────────────────────────────────────────────────────────────────
-    readonly property color clockPillBackground:     base01//nord1
-    readonly property color clockPillTimeColor:      inverseSurface //nord6
-    readonly property color clockPillDateColor:      base0C//nord8
-    readonly property color clockPillSeparatorColor: secondaryP60//nord3
+// ── PillHover ─────────────────────────────────────────────────────────────
+readonly property color pillHoverBackground:        secondaryP15//base00  // #3d4855 — clear lift off bar
+readonly property color pillHoverBackgroundHovered: secondaryP20  // #4c5c69 — step up on hover
+readonly property color pillHoverPrimaryText:       base07  // #96becf — cool blue-white
+readonly property color pillHoverSecondaryText:     base05  // #7897a6 — dimmer, same hue
+readonly property color pillHoverSeparator:         base03  // #5b6f7e — mid-tone divider
 
-    // ── Workspace dots ────────────────────────────────────────────────────────
-    readonly property color workspaceDotFocusedColor:            base0C
-    readonly property color workspaceDotOccupiedColor:           inverseSurface//nord6
-    readonly property color workspaceDotEmptyColor:              base01//nord1
-    readonly property color workspaceIndicatorBackground:        base01//nord1
-    readonly property color workspaceIndicatorBackgroundHovered: base02//nord2
+// ── PillStatic ────────────────────────────────────────────────────────────
+readonly property color pillStaticBackground:      secondaryP15   // #3d4855
+readonly property color pillStaticHoverBackground: secondaryP20   // #4c5c69
+readonly property color pillStaticText:            base07   // #96becf
 
-    // ── Workspace icon ────────────────────────────────────────────────────────
-    readonly property color workspaceIconBackground:        base01//nord1
-    readonly property color workspaceIconBackgroundHovered: base02//nord2
-    readonly property color workspaceIconColor:             base0C//nord8
+// ── Clock ─────────────────────────────────────────────────────────────────
+readonly property color clockPillBackground:     secondaryP15     // #3d4855
+readonly property color clockPillTimeColor:      primaryP90     // #96becf — primary label
+readonly property color clockPillDateColor:      primaryP70    // #9ccbfb — brightest accent pop
+readonly property color clockPillSeparatorColor: tertiaryP60     // #5b6f7e
 
-    // ── Audio / BasePill ──────────────────────────────────────────────────────
+// ── Workspace dots ────────────────────────────────────────────────────────
+readonly property color workspaceDotFocusedColor:            primaryP80   // #9ccbfb — full accent
+readonly property color workspaceDotOccupiedColor:           primaryP90    // #87aabb — warm occupied
+readonly property color workspaceDotEmptyColor:              secondaryP20    // #4c5c69 — recessive, not invisible
+readonly property color workspaceIndicatorBackground:        secondaryP15    // #3d4855
+readonly property color workspaceIndicatorBackgroundHovered: secondaryP20    // #4c5c69
+
+// ── Workspace icon ────────────────────────────────────────────────────────
+readonly property color workspaceIconBackground:        secondaryP15   // #3d4855
+readonly property color workspaceIconBackgroundHovered: secondaryP20   // #4c5c69
+readonly property color workspaceIconColor:             primaryP90  // #9ccbfb
+
+// ── Audio / BasePill ──────────────────────────────────────────────────────
+readonly property color audioError: error   // #ffb4ab — tracks theme now   
+
+readonly property color basePillAccentColor: primaryP80
+readonly property color basePillAccentOnColor: secondaryP15
+readonly property color basePillPopoutOpenColor: secondaryP15
+readonly property color basePillOnSurface: primaryP90
     
 }

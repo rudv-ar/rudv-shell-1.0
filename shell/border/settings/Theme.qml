@@ -345,6 +345,6 @@ Singleton {
     readonly property color nord10: "#5E81AC"
 
     //-- border
-    readonly property color borderColor: base00
+    readonly property color borderColor: background
     
 }

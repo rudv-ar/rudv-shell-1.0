@@ -23,8 +23,8 @@ Item {
         popoutOpen:    root.popoutOpen
         alwaysExpanded: false
         muted:         AudioService.muted
-        accentColor:   Theme.base0C
-        accentOnColor: Theme.base00
+        accentColor:   Theme.basePillAccentColor
+        accentOnColor: Theme.basePillAccentOnColor
 
         onClicked: function(mouse) {
             if (mouse.button === Qt.RightButton) {

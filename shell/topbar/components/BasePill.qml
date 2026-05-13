@@ -9,9 +9,9 @@ Item {
     property string label:        ""
     property bool   popoutOpen:   false
     property bool   muted:        false
-    property bool   alwaysExpanded: false          // ← NEW
-    property color  accentColor:  Theme.base0C//Theme.nord8
-    property color  accentOnColor: Theme.base00
+    property bool   alwaysExpanded: false
+    property color  accentColor:  Theme.basePillAccentColor
+    property color  accentOnColor: Theme.basePillAccentOnColor
 
     signal clicked(var mouse)
     signal scrolled(real delta)
@@ -19,7 +19,6 @@ Item {
     readonly property real sceneCenterX: mapToItem(null, width / 2, 0).x
     readonly property bool hovered:      _mouse.containsMouse
 
-    // single derived bool — all visual logic reads this
     readonly property bool _active: alwaysExpanded || hovered
 
     implicitWidth:  _bg.implicitWidth
@@ -32,14 +31,14 @@ Item {
         radius: Properties.basePillRadius
 
         color: root.popoutOpen
-               ? Theme.base01
+               ? Theme.basePillPopoutOpenColor
                : root.muted
                  ? Qt.rgba(Theme.audioError.r,
                            Theme.audioError.g,
                            Theme.audioError.b, 0.18)
-                 : root._active
-                   ? Theme.base02
-                   : Theme.base01
+                 : root.hovered
+                   ? Theme.secondaryP20
+                   : Theme.secondaryP15
 
         implicitWidth: {
             const base = Properties.basePillPadding
@@ -78,7 +77,7 @@ Item {
 
             color: root._active && Properties.basePillHoverEnabled
                    ? (root.muted ? Theme.audioError : root.accentColor)
-                   : Theme.base01
+                   : Theme.secondaryP15
 
             Behavior on color {
                 ColorAnimation { duration: Properties.basePillExpandDuration }
@@ -94,8 +93,8 @@ Item {
                 font.weight:      Font.Black
 
                 color: root._active && Properties.basePillHoverEnabled
-                       ? (root.muted ? Theme.base00 : root.accentOnColor)
-                       : (root.muted ? Theme.audioError : Theme.base06)
+                       ? (root.muted ? Theme.secondaryP20 : root.accentOnColor)
+                       : (root.muted ? Theme.audioError : Theme.basePillOnSurface)
 
                 rotation: root._active
                           && Properties.basePillIconRotateEnabled ? 360 : 0
@@ -123,7 +122,7 @@ Item {
             text:           root.label
             font.pixelSize: Properties.basePillFontSize
             font.weight:    Font.Medium
-            color:          Theme.nord6
+            color:          Theme.basePillOnSurface
 
             opacity: root._active && Properties.basePillHoverEnabled ? 1.0 : 0.0
             visible: opacity > 0

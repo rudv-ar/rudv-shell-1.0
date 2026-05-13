@@ -69,7 +69,7 @@ Item {
             font.pixelSize:   Properties.workspaceDotLabelFontSize
             font.family:      Properties.clockPillFontFamily
             color:            root._dotColor === Theme.workspaceDotEmptyColor
-                              ? Theme.pillHoverPrimaryText
+                              ? Theme.primaryP90
                               : Theme.barBackground
             // contrast: light text on dark empty dot, dark text on light/accent dots
 

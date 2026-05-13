@@ -30,8 +30,9 @@ Item {
         label:      NetworkService.label
         muted:      !NetworkService.connected
 
-        accentColor:   Theme.base0C
-        accentOnColor: Theme.base00
+        accentColor:   Theme.basePillAccentColor
+        //alwaysExpanded: true
+        accentOnColor: Theme.basePillAccentOnColor
 
         onClicked: function(mouse) {
             if (mouse.button === Qt.RightButton) {

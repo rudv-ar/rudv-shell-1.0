@@ -10,21 +10,23 @@ Item {
     implicitWidth:  _pill.implicitWidth
     implicitHeight: _pill.implicitHeight
 
-    BasePill {
+    DualPill {
         id: _pill
 
-        glyph:      Properties.rightbarPowerGlyph
-        fontFamily: Properties.nerdFontFamily
-        label:      "power"
+        leftGlyph:  Properties.rightbarSettingsGlyph
+        leftLabel:  ""
+        leftAlwaysExpanded: false
 
-        onClicked: function(mouse) {
+        rightGlyph: Properties.rightbarPowerGlyph
+        rightLabel: ""
+        rightAlwaysExpanded: false
+
+        onRightClicked: function(mouse) {
             if (mouse.button === Qt.LeftButton) {
                 _proc.command = Commands.powerMenu()
                 _proc.running = true
             }
         }
-
-        onScrolled: function(delta) {}
     }
 
     Process {

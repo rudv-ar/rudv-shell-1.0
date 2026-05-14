@@ -375,8 +375,8 @@ readonly property color workspaceIndicatorBackground:        secondaryP15    // 
 readonly property color workspaceIndicatorBackgroundHovered: secondaryP20    // #4c5c69
 
 // ── Workspace icon ────────────────────────────────────────────────────────
-readonly property color workspaceIconBackground:        secondaryP15   // #3d4855
-readonly property color workspaceIconBackgroundHovered: secondaryP20   // #4c5c69
+readonly property color workspaceIconBackground:        secondaryP30   // #3d4855
+readonly property color workspaceIconBackgroundHovered: secondaryP40   // #4c5c69
 readonly property color workspaceIconColor:             primaryP90  // #9ccbfb
 
 // ── Audio / BasePill ──────────────────────────────────────────────────────

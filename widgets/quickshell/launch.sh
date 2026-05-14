@@ -9,7 +9,7 @@ notifications_pid=$!
 qs -p ~/.config/bspwm/shell/powermenu/shell.qml > /dev/null 2>&1 & 
 powermenu_pid=$!
 
-sleep 20
+sleep 30
 topbar_wid=$(xdotool search --pid $topbar_pid)
 xdotool set_window --classname "qs-topbar" --class "qs-topbar" $topbar_wid
 #xprop -id $topbar_wid -f WM_CLASS 8s -set WM_CLASS "qs-topbar\000qs-topbar"

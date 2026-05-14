@@ -365,7 +365,7 @@ readonly property color pillStaticText:            base07   // #96becf
 readonly property color clockPillBackground:     secondaryP15     // #3d4855
 readonly property color clockPillTimeColor:      primaryP90     // #96becf — primary label
 readonly property color clockPillDateColor:      primaryP70    // #9ccbfb — brightest accent pop
-readonly property color clockPillSeparatorColor: tertiaryP60     // #5b6f7e
+readonly property color clockPillSeparatorColor: secondaryP60     // #5b6f7e
 
 // ── Workspace dots ────────────────────────────────────────────────────────
 readonly property color workspaceDotFocusedColor:            primaryP80   // #9ccbfb — full accent

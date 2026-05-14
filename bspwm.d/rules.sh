@@ -127,13 +127,9 @@ bspc rule -a Plank manage=off
 ############################## General Rules #########################################
 
 bspc rule -a stalonetray state=floating manage=off
+bspc rule -a '' name=quickshell state=floating layer=above sticky=on focusable=off border=off
+bspc rule -a 'qs-topbar:qs-topbar' manage=on border=off locked=on sticky=on layer=above state=floating focus=off
 
-bspc rule -a '' name=quickshell \
-  state=floating \
-  layer=above \
-  sticky=on \
-  focusable=off \
-  border=off
 ############################ External Rules ##########################################
 
 # if you have any, then place them @ exter_rules dir and run from there.

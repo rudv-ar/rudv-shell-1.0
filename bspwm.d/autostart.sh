@@ -27,6 +27,11 @@ ksuperkey -e 'Super_R=Alt_L|F1' &
 # ── Cursor ────────────────────────────────────────────────────────────────────
 xsetroot -cursor_name left_ptr
 
+# ── Widget bar ────────────────────────────────────────────────────────────────
+[[ $is_widget == true ]] && bash "$BSPDIR/widgets/$widget_bar/launch.sh" &
+[[ $is_plank == true ]] && plank &
+
+
 # ── MPD ───────────────────────────────────────────────────────────────────────
 [[ $is_svc_mpd == true ]] && systemctl --user start mpd &
 
@@ -51,12 +56,8 @@ if [[ $is_svc_vicinae == true ]]; then
     vicinae server &
 fi
 
-# ── Widget bar ────────────────────────────────────────────────────────────────
-[[ $is_widget == true ]] && bash "$BSPDIR/widgets/$widget_bar/launch.sh" &
-[[ $is_plank == true ]] && plank &
-
 # ── Dunst ─────────────────────────────────────────────────────────────────────
-[[ $is_svc_dunst == true ]] && bspdunst &
+[[ $is_svc_dunst == true ]] && [[ $widget_bar != "quickshell" ]] && bspdunst &
 
 # ── Bspfloat ──────────────────────────────────────────────────────────────────
 bspfloat &
@@ -91,3 +92,4 @@ fi
 
 ##---------------------------------------- Manager Scripts : All those use bspc subscribe to bring about some action----------------------------
 bash "$BSPDIR/bspwm.d/exter_rules/raise_plank.sh" &
+

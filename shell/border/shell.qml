@@ -14,9 +14,11 @@ ShellRoot {
         implicitWidth:  Screen.width
         implicitHeight: Screen.height
         color:  "transparent"
+        mask:   Region{}
 
         Rectangle {
             anchors.fill: parent
+            anchors.topMargin: Properties.marginCover
             color:        Theme.borderColor
 
             layer.enabled: true

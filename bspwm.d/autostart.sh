@@ -27,9 +27,6 @@ ksuperkey -e 'Super_R=Alt_L|F1' &
 # ── Cursor ────────────────────────────────────────────────────────────────────
 xsetroot -cursor_name left_ptr
 
-# ── Widget bar ────────────────────────────────────────────────────────────────
-[[ $is_widget == true ]] && bash "$BSPDIR/widgets/$widget_bar/launch.sh" &
-[[ $is_plank == true ]] && plank &
 
 
 # ── MPD ───────────────────────────────────────────────────────────────────────
@@ -62,6 +59,9 @@ fi
 # ── Bspfloat ──────────────────────────────────────────────────────────────────
 bspfloat &
 
+
+
+
 # ── Tor ───────────────────────────────────────────────────────────────────────
 if [[ $is_net_tor == true ]]; then
     mkdir -p "$net_tor_torerrors"
@@ -89,6 +89,11 @@ if [[ $is_svc_snapserver == true ]]; then
     pactl set-default-sink snapfifo
     snapserver &
 fi
+
+# ── Widget bar ────────────────────────────────────────────────────────────────
+[[ $is_widget == true ]] && bash "$BSPDIR/widgets/$widget_bar/launch.sh" &
+[[ $is_plank == true ]] && plank &
+
 
 ##---------------------------------------- Manager Scripts : All those use bspc subscribe to bring about some action----------------------------
 bash "$BSPDIR/bspwm.d/exter_rules/raise_plank.sh" &

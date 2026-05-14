@@ -344,5 +344,7 @@ Singleton {
     readonly property color nord9:  "#81A1C1"
     readonly property color nord10: "#5E81AC"
 
+    readonly property color accent: primaryP80
+
     
 }

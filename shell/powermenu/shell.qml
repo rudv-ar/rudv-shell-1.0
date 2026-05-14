@@ -1,4 +1,5 @@
 import qs.settings
+import qs.modules
 import QtQuick
 import QtQuick.Shapes
 import Quickshell
@@ -26,7 +27,6 @@ PanelWindow {
     anchors { right: true; top: true; bottom: true }
     exclusionMode: ExclusionMode.Ignore
 
-    // ── INPUT MASK — tracks visible notch bounds ───────────────────
     mask: Region {
         item: Item {
             x:      root.implicitWidth - root.notchWidth - root.sr
@@ -35,21 +35,21 @@ PanelWindow {
             height: root.notchHeight + root.sr * 2
         }
     }
-    // ───────────────────────────────────────────────────────────────
 
-    Behavior on notchWidth { NumberAnimation { duration: 420; easing.type: Easing.InOutCubic } }
+    Behavior on notchWidth { NumberAnimation { duration: 200; easing.type: Easing.InOutCubic } }
 
     IpcHandler {
         target: "powermenu"
-        function expand(): void   { root.notchWidth = Properties.powerMenuWidthExpanded; }
-        function contract(): void { root.notchWidth = Properties.powerMenuWidthInitial; }
+        function expand(): void   { root.notchWidth = Properties.powerMenuWidthExpanded }
+        function contract(): void { root.notchWidth = Properties.powerMenuWidthInitial }
         function toggle(): void {
             root.notchWidth = (root.notchWidth === Properties.powerMenuWidthInitial)
                 ? Properties.powerMenuWidthExpanded
-                : Properties.powerMenuWidthInitial;
+                : Properties.powerMenuWidthInitial
         }
     }
 
+    // ── Shape (background notch) — rendered first (below) ────────
     Shape {
         anchors.right:  parent.right
         anchors.top:    parent.top
@@ -91,5 +91,22 @@ PanelWindow {
                 direction: PathArc.Clockwise
             }
         }
+    }
+
+    // ── PowerBoard — rendered after Shape (sits on top) ───────────
+    PowerBoard {
+        x:      root.implicitWidth - root.notchWidth
+        y:      (root.height - root.notchHeight) / 2
+        width:  root.notchWidth
+        height: root.notchHeight
+        clip:   true
+
+        visible: opacity > 0
+        opacity: Math.max(0,
+            (root.notchWidth - Properties.powerMenuWidthInitial) /
+            (Properties.powerMenuWidthExpanded - Properties.powerMenuWidthInitial)
+        )
+
+        Behavior on opacity { NumberAnimation { duration: 180 } }
     }
 }

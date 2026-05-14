@@ -190,7 +190,7 @@ super + space
     vicinae toggle
     
 super + x
-    vicinae deeplink vicinae://extensions/vicinae/clipboard/history	
+    vicinae deeplink vicinae://launch/clipboard/history
 
 super + a
     vicinae deeplink vicinae://extensions/rithvikvibhu/arch-packages/search-arch-packages

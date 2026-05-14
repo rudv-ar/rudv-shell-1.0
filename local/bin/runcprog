@@ -1,2 +1,0 @@
-#!/bin/bash 
-make -f "~/.local/bin/cenvs/Makefile-default" SRC="${1}"

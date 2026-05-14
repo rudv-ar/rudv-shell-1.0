@@ -21,12 +21,12 @@ process_image() {
 
     local tmp="/tmp/_qs_$$_${filename}.miff"
 
-    convert "$img" -thumbnail x500 -strip "$tmp" || return
+    magick convert "$img" -thumbnail x500 -strip "$tmp" || return
     local w h
     w=$(identify -format "%w" "$tmp")
     h=$(identify -format "%h" "$tmp")
 
-    convert "$tmp" \
+    magick convert "$tmp" \
         -alpha set \
         \( -size ${w}x${h} xc:none \
            -fill white \

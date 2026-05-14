@@ -6,11 +6,11 @@ import qs.modules.clock
 import qs.modules.workspace
 import qs.modules.audio
 import qs.modules.network
+import qs.modules.powermenu
 
 ShellRoot {
     Variants {
         model: Quickshell.screens
-
         delegate: Component {
             PanelWindow {
                 id: win

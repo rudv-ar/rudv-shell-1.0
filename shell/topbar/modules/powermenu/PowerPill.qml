@@ -1,6 +1,8 @@
 import QtQuick
 import qs.settings
 import qs.components
+import Quickshell
+import Quickshell.Io
 
 Item {
     id: root
@@ -15,8 +17,18 @@ Item {
         fontFamily: Properties.nerdFontFamily
         label:      "power"
 
-        onClicked:  function(mouse) {}
+        onClicked: function(mouse) {
+            if (mouse.button === Qt.LeftButton) {
+                _proc.command = Commands.powerMenu()
+                _proc.running = true
+            }
+        }
+
         onScrolled: function(delta) {}
     }
-}
 
+    Process {
+        id: _proc
+        running: false
+    }
+}

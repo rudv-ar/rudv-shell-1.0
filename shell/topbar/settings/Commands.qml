@@ -1,5 +1,6 @@
 pragma Singleton
 import QtQuick
+import Quickshell
 
 QtObject {
     // ── Workspace ─────────────────────────────────────────────────────────────
@@ -37,7 +38,10 @@ QtObject {
     function networkConnEdit() {
         return ["vicinae", "deeplink", "vicinae://launch/@dagimg-dot/store.vicinae.wifi-commander/scan-wifi"]
     }
-    
+
+  function powerMenu() {
+      return ["qs", "-p", Quickshell.env("HOME") + "/.config/bspwm/shell/powermenu/shell.qml", "ipc", "call", "powermenu", "toggle"]
+  }      
 }
 
 

@@ -6,6 +6,8 @@ qs -p ~/.config/bspwm/shell/border/shell.qml > /dev/null 2>&1 &
 border_pid=$!
 qs -p ~/.config/bspwm/shell/notifications/shell.qml > /dev/null 2>&1 &
 notifications_pid=$!
+qs -p ~/.config/bspwm/shell/powermenu/shell.qml > /dev/null 2>&1 & 
+powermenu_pid=$!
 
 sleep 20
 topbar_wid=$(xdotool search --pid $topbar_pid)
@@ -17,3 +19,6 @@ xdotool set_window --classname "qs-border" --class "qs-border" $border_wid
 notifications_wid=$(xdotool search --pid $notifications_pid)
 xdotool set_window --classname "qs-notify" --class "qs-notify" $notifications_wid
 #xprop -id $notifications_wid -f WM_CLASS 8s -set WM_CLASS "qs-notify\000qs-notify"
+powermenu_wid=$(xdotool search --pid $powermenu_pid)
+xdotool set_window --classname "qs-powermenu" --class "qs-powermenu" $powermenu_wid
+

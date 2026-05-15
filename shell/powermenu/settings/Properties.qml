@@ -6,8 +6,8 @@ QtObject {
     property int powerMenuWidthInitial: 0 
     property int powerMenuWidthExpanded: 75
     property int powerMenuHeight: 280 
-    property int powerMenuCornerRadius: 20
-    property int powerMenuShoulderRadius: 20
+    property int powerMenuCornerRadius: 18
+    property int powerMenuShoulderRadius: 18
     property int powerMenuBorderWidth: 1.0 
     property int powerMenuImplicitWidth: 80
 // ── PowerBoard layout ──────────────────────────────────────────
